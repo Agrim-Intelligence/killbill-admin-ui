@@ -1,0 +1,37 @@
+# Omega fleet registry for the Kill Bill demo vendor (operator-owned: Omega never writes this file).
+# Three clients, each a Kill Bill tenant (see Agrim-Intelligence/killbill-target seed/clients.json),
+# each reachable through two deployments of the product's admin UI (Kaui).
+version: 1
+vendor:
+  name: Kill Bill demo vendor
+  release_profile:
+    tests_live_in: product-repo
+    product_branch_rule: master
+    line_rule: '^v4\.0\.'
+lines:
+  - {id: "v4.0", status: active, branch: master}
+deployments:
+  - id: "staging"
+    kind: pre-production
+    base_url: "https://kaui-production-8bf2.up.railway.app"
+    version: "4.0.31"
+  - id: "uat"
+    kind: pre-production
+    base_url: "https://kaui-uat-production.up.railway.app"
+    version: "4.0.31"
+clients:
+  - id: "client-a"
+    name: Acme
+    links:
+      - {id: "client-a_staging", deployment: "staging", features: {annual_billing: true, pro_tier: true, trial: false}}
+      - {id: "client-a_uat", deployment: "uat", promotes_from: "client-a_staging", features: {annual_billing: true, pro_tier: true, trial: false}}
+  - id: "client-b"
+    name: Globex
+    links:
+      - {id: "client-b_staging", deployment: "staging", features: {annual_billing: true, pro_tier: false, trial: false}}
+      - {id: "client-b_uat", deployment: "uat", promotes_from: "client-b_staging", features: {annual_billing: true, pro_tier: false, trial: false}}
+  - id: "client-c"
+    name: Initech
+    links:
+      - {id: "client-c_staging", deployment: "staging", features: {annual_billing: false, pro_tier: false, trial: true}}
+      - {id: "client-c_uat", deployment: "uat", promotes_from: "client-c_staging", features: {annual_billing: false, pro_tier: false, trial: true}}

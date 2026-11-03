@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Wires git's commit-msg hook to the gate script. Installed once by pointing
+# git at this directory:
+#   git config core.hooksPath .githooks
+# (done by the scaffold tool; this repo's CLAUDE.md documents the command so
+# a human can redo it if git config ever resets.)
+exec "$(git rev-parse --show-toplevel)/scripts/gate-omega-managed-paths.sh" "$1"

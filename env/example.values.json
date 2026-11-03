@@ -1,0 +1,5 @@
+{
+  "LoginPage.record": "00000000",
+  "login.validUser.username": "demo-user",
+  "login.validUser.password": { "credential": "default" }
+}

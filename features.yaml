@@ -1,0 +1,4 @@
+# Fleet feature list. Operator-owned: edit freely, the scaffold never overwrites it.
+# Empty on purpose: only the built-in core feature is known until features are added here
+# (Omega proposes them as pull requests; see omega/README.md for the ones this demo expects).
+features: {}

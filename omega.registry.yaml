@@ -9,7 +9,7 @@ vendor:
     product_branch_rule: master
     line_rule: '^v4\.0\.'
 lines:
-  - {id: "v4.0", status: active, branch: master}
+  - {id: "v4.0", status: active, branch: master, match: '^4\.0\.'}
 deployments:
   - id: "staging"
     kind: pre-production

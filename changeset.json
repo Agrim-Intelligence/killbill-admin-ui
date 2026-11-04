@@ -1,10 +1,10 @@
 {
   "contract_version": "1.1.0",
-  "run_id": "1ff13a49-18df-440a-b25e-7d2337255cec",
+  "run_id": "49af35ce-7ba9-43d0-b818-10499542a295",
   "files": [
     {
-      "path": "tests/users-sign-in--tenants--accounts-page2--accounts-bundles/view-the-first-account-s-active-subscription-bundle-and-cancel-options.spec.ts",
-      "action": "add",
+      "path": "tests/users-sign-in--tenants/view-client-accounts-list.spec.ts",
+      "action": "modify",
       "kind": "test"
     },
     {
@@ -28,30 +28,10 @@
       "kind": "selectors"
     },
     {
-      "path": "pages/AccountsPage2.page.ts",
-      "action": "add",
-      "kind": "page"
-    },
-    {
-      "path": "pages/AccountsPage2.selectors.json",
-      "action": "add",
-      "kind": "selectors"
-    },
-    {
-      "path": "pages/AccountsBundlesPage.page.ts",
-      "action": "add",
-      "kind": "page"
-    },
-    {
-      "path": "pages/AccountsBundlesPage.selectors.json",
-      "action": "add",
-      "kind": "selectors"
-    },
-    {
-      "path": "data/users-sign-in--tenants--accounts-page2--accounts-bundles.data.ts",
-      "action": "add",
+      "path": "data/users-sign-in--tenants.data.ts",
+      "action": "modify",
       "kind": "data"
     }
   ],
-  "summary": "Emit view-the-first-account-s-active-subscription-bundle-and-cancel-options via registry-first path (UsersSignInPage, TenantsPage, AccountsPage2, AccountsBundlesPage)"
+  "summary": "Emit view-client-accounts-list via registry-first path (UsersSignInPage, TenantsPage)"
 }

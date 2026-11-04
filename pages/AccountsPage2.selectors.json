@@ -11,6 +11,15 @@
           "value": "link[name=Subscriptions]"
         }
       ]
+    },
+    "breadcrumbNavigation": {
+      "intent": "The control labelled \"Breadcrumb\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "navigation[name=Breadcrumb]"
+        }
+      ]
     }
   }
 }

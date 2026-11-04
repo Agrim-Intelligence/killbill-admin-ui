@@ -1,0 +1,52 @@
+{
+  "contract_version": "1.1.0",
+  "class": "AccountsPage",
+  "route": "/accounts",
+  "elements": {
+    "advancedSearchButton": {
+      "intent": "The submit button on the sign-in form",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "button[name=Advanced Search]"
+        }
+      ]
+    },
+    "searchFieldField": {
+      "intent": "The control labelled \"Search field\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByLabel",
+          "value": "Search field"
+        }
+      ]
+    },
+    "searchValueTextbox": {
+      "intent": "The control labelled \"Search value\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "textbox[name=Search value]"
+        }
+      ]
+    },
+    "applySearchButton": {
+      "intent": "The submit button on the sign-in form",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "button[name=Apply Search]"
+        }
+      ]
+    },
+    "showing1To1Of1EntriesText": {
+      "intent": "The control labelled \"Showing 1 to 1 of 1 entries (\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByText",
+          "value": "Showing 1 to 1 of 1 entries ("
+        }
+      ]
+    }
+  }
+}

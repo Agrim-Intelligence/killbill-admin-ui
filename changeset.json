@@ -1,47 +1,57 @@
 {
   "contract_version": "1.1.0",
-  "run_id": "5f8a3c1b-31e0-46aa-aed7-23b004836cb8",
+  "run_id": "1ff13a49-18df-440a-b25e-7d2337255cec",
   "files": [
     {
-      "path": "tests/users-sign-in--tenants--home/successful-admin-sign-in.spec.ts",
+      "path": "tests/users-sign-in--tenants--accounts-page2--accounts-bundles/view-the-first-account-s-active-subscription-bundle-and-cancel-options.spec.ts",
       "action": "add",
       "kind": "test"
     },
     {
       "path": "pages/UsersSignInPage.page.ts",
-      "action": "add",
+      "action": "modify",
       "kind": "page"
     },
     {
       "path": "pages/UsersSignInPage.selectors.json",
-      "action": "add",
+      "action": "modify",
       "kind": "selectors"
     },
     {
       "path": "pages/TenantsPage.page.ts",
-      "action": "add",
+      "action": "modify",
       "kind": "page"
     },
     {
       "path": "pages/TenantsPage.selectors.json",
-      "action": "add",
+      "action": "modify",
       "kind": "selectors"
     },
     {
-      "path": "pages/HomePage.page.ts",
+      "path": "pages/AccountsPage2.page.ts",
       "action": "add",
       "kind": "page"
     },
     {
-      "path": "pages/HomePage.selectors.json",
+      "path": "pages/AccountsPage2.selectors.json",
       "action": "add",
       "kind": "selectors"
     },
     {
-      "path": "data/users-sign-in--tenants--home.data.ts",
+      "path": "pages/AccountsBundlesPage.page.ts",
+      "action": "add",
+      "kind": "page"
+    },
+    {
+      "path": "pages/AccountsBundlesPage.selectors.json",
+      "action": "add",
+      "kind": "selectors"
+    },
+    {
+      "path": "data/users-sign-in--tenants--accounts-page2--accounts-bundles.data.ts",
       "action": "add",
       "kind": "data"
     }
   ],
-  "summary": "Emit successful-admin-sign-in via registry-first path (UsersSignInPage, TenantsPage, HomePage)"
+  "summary": "Emit view-the-first-account-s-active-subscription-bundle-and-cancel-options via registry-first path (UsersSignInPage, TenantsPage, AccountsPage2, AccountsBundlesPage)"
 }

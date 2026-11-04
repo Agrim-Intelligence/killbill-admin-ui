@@ -1,0 +1,16 @@
+{
+  "contract_version": "1.1.0",
+  "class": "AccountsPage2",
+  "route": "/accounts/{record}",
+  "elements": {
+    "subscriptionsLink": {
+      "intent": "The control labelled \"Subscriptions\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "link[name=Subscriptions]"
+        }
+      ]
+    }
+  }
+}

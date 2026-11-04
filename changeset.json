@@ -1,10 +1,10 @@
 {
   "contract_version": "1.1.0",
-  "run_id": "723bfb6b-7eaa-4364-abd6-3bdf45dd8671",
+  "run_id": "7aace33c-514e-47f6-a9cc-cc134c1417c4",
   "files": [
     {
-      "path": "tests/users-sign-in--tenants--accounts-bundles--subscriptions-new/check-for-annual-plan-offering.spec.ts",
-      "action": "modify",
+      "path": "tests/users-sign-in--tenants--accounts-page2--accounts-invoices/navigate-to-invoices-page-and-verify-content.spec.ts",
+      "action": "add",
       "kind": "test"
     },
     {
@@ -28,30 +28,30 @@
       "kind": "selectors"
     },
     {
-      "path": "pages/AccountsBundlesPage.page.ts",
+      "path": "pages/AccountsPage2.page.ts",
       "action": "modify",
       "kind": "page"
     },
     {
-      "path": "pages/AccountsBundlesPage.selectors.json",
+      "path": "pages/AccountsPage2.selectors.json",
       "action": "modify",
       "kind": "selectors"
     },
     {
-      "path": "pages/SubscriptionsNewPage.page.ts",
-      "action": "modify",
+      "path": "pages/AccountsInvoicesPage.page.ts",
+      "action": "add",
       "kind": "page"
     },
     {
-      "path": "pages/SubscriptionsNewPage.selectors.json",
-      "action": "modify",
+      "path": "pages/AccountsInvoicesPage.selectors.json",
+      "action": "add",
       "kind": "selectors"
     },
     {
-      "path": "data/users-sign-in--tenants--accounts-bundles--subscriptions-new.data.ts",
-      "action": "modify",
+      "path": "data/users-sign-in--tenants--accounts-page2--accounts-invoices.data.ts",
+      "action": "add",
       "kind": "data"
     }
   ],
-  "summary": "Emit check-for-annual-plan-offering via registry-first path (UsersSignInPage, TenantsPage, AccountsBundlesPage, SubscriptionsNewPage)"
+  "summary": "Emit navigate-to-invoices-page-and-verify-content via registry-first path (UsersSignInPage, TenantsPage, AccountsPage2, AccountsInvoicesPage)"
 }

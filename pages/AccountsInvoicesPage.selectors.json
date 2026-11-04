@@ -1,0 +1,25 @@
+{
+  "contract_version": "1.1.0",
+  "class": "AccountsInvoicesPage",
+  "route": "/accounts/{record}/invoices",
+  "elements": {
+    "breadcrumbNavigation": {
+      "intent": "The control labelled \"Breadcrumb\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "navigation[name=Breadcrumb]"
+        }
+      ]
+    },
+    "invoicesHeading": {
+      "intent": "The control labelled \"Invoices\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "heading[name=Invoices]"
+        }
+      ]
+    }
+  }
+}

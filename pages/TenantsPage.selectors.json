@@ -11,6 +11,24 @@
           "value": "button[name=Save]"
         }
       ]
+    },
+    "killBillLogoLink": {
+      "intent": "The control labelled \"Kill Bill Logo\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "link[name=Kill Bill Logo]"
+        }
+      ]
+    },
+    "kbTenantIdLocator": {
+      "intent": "The control labelled \"#kb_tenant_id\" on the page",
+      "candidates": [
+        {
+          "strategy": "locator",
+          "value": "#kb_tenant_id"
+        }
+      ]
     }
   }
 }

@@ -3,6 +3,24 @@
   "class": "AccountsBundlesPage",
   "route": "/accounts/{record}/bundles",
   "elements": {
+    "cancelButton": {
+      "intent": "The submit button on the sign-in form",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "button[name=Cancel]"
+        }
+      ]
+    },
+    "evergreenText": {
+      "intent": "The control labelled \"evergreen\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByText",
+          "value": "evergreen"
+        }
+      ]
+    },
     "acmeMonthlyCell": {
       "intent": "The control labelled \"acme-monthly\" on the page",
       "candidates": [
@@ -21,21 +39,12 @@
         }
       ]
     },
-    "cancelButton": {
+    "createSubscriptionButton": {
       "intent": "The submit button on the sign-in form",
       "candidates": [
         {
           "strategy": "getByRole",
-          "value": "button[name=Cancel]"
-        }
-      ]
-    },
-    "evergreenText": {
-      "intent": "The control labelled \"evergreen\" on the page",
-      "candidates": [
-        {
-          "strategy": "getByText",
-          "value": "evergreen"
+          "value": "button[name=Create Subscription]"
         }
       ]
     }

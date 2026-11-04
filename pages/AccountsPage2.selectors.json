@@ -11,6 +11,42 @@
           "value": "link[name=Subscriptions]"
         }
       ]
+    },
+    "breadcrumbNavigation": {
+      "intent": "The control labelled \"Breadcrumb\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "navigation[name=Breadcrumb]"
+        }
+      ]
+    },
+    "accountInformationHeading": {
+      "intent": "The control labelled \"Account Information\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "heading[name=Account Information]"
+        }
+      ]
+    },
+    "invoicesLink": {
+      "intent": "The control labelled \"Invoices\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "link[name=Invoices]"
+        }
+      ]
+    },
+    "paymentsLink": {
+      "intent": "The control labelled \"Payments\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "link[name=Payments]"
+        }
+      ]
     }
   }
 }

@@ -1,9 +1,9 @@
 {
   "contract_version": "1.1.0",
-  "run_id": "49af35ce-7ba9-43d0-b818-10499542a295",
+  "run_id": "7a2df385-7b1a-4d92-939f-c835108573fe",
   "files": [
     {
-      "path": "tests/users-sign-in--tenants/view-client-accounts-list.spec.ts",
+      "path": "tests/users-sign-in--tenants--accounts-page2/verify-account-details-and-sub-page-links.spec.ts",
       "action": "modify",
       "kind": "test"
     },
@@ -28,10 +28,20 @@
       "kind": "selectors"
     },
     {
-      "path": "data/users-sign-in--tenants.data.ts",
+      "path": "pages/AccountsPage2.page.ts",
+      "action": "modify",
+      "kind": "page"
+    },
+    {
+      "path": "pages/AccountsPage2.selectors.json",
+      "action": "modify",
+      "kind": "selectors"
+    },
+    {
+      "path": "data/users-sign-in--tenants--accounts-page2.data.ts",
       "action": "modify",
       "kind": "data"
     }
   ],
-  "summary": "Emit view-client-accounts-list via registry-first path (UsersSignInPage, TenantsPage)"
+  "summary": "Emit verify-account-details-and-sub-page-links via registry-first path (UsersSignInPage, TenantsPage, AccountsPage2)"
 }

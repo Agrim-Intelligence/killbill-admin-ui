@@ -18,12 +18,6 @@ export class TenantsPage {
     this.kbTenantIdLocator = page.locator('#kb_tenant_id');
   }
 
-  async killBillLogo(): Promise<void> {
-    await test.step('killBillLogo()', async () => {
-      await this.killBillLogoLink.click();
-    }, { box: true });
-  }
-
   async save(kbTenantId: string): Promise<void> {
     await test.step('save()', async () => {
       await this.kbTenantIdLocator.selectOption(kbTenantId);

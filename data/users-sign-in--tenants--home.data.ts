@@ -211,6 +211,6 @@ export function testData<T extends Defaults>(byFeature: Record<string, T>): Reso
 
 export const usersSignInTenantsHomeData = testData({
   "users-sign-in--tenants--home": {
-    successfulAdminSignIn: { username: "admin", password: credential() },
+    successfullySignOutAfterSelectingATenant: { username: "admin", password: credential(), kbTenantId: "Acme Test Tenant" },
   },
 });

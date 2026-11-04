@@ -1,10 +1,10 @@
 {
   "contract_version": "1.1.0",
-  "run_id": "7aace33c-514e-47f6-a9cc-cc134c1417c4",
+  "run_id": "2976ae48-402f-4228-8555-cfed0a2bc7f1",
   "files": [
     {
-      "path": "tests/users-sign-in--tenants--accounts-page2--accounts-invoices/navigate-to-invoices-page-and-verify-content.spec.ts",
-      "action": "add",
+      "path": "tests/users-sign-in--tenants--home/successfully-sign-out-after-selecting-a-tenant.spec.ts",
+      "action": "modify",
       "kind": "test"
     },
     {
@@ -28,30 +28,20 @@
       "kind": "selectors"
     },
     {
-      "path": "pages/AccountsPage2.page.ts",
+      "path": "pages/HomePage.page.ts",
       "action": "modify",
       "kind": "page"
     },
     {
-      "path": "pages/AccountsPage2.selectors.json",
+      "path": "pages/HomePage.selectors.json",
       "action": "modify",
       "kind": "selectors"
     },
     {
-      "path": "pages/AccountsInvoicesPage.page.ts",
-      "action": "add",
-      "kind": "page"
-    },
-    {
-      "path": "pages/AccountsInvoicesPage.selectors.json",
-      "action": "add",
-      "kind": "selectors"
-    },
-    {
-      "path": "data/users-sign-in--tenants--accounts-page2--accounts-invoices.data.ts",
-      "action": "add",
+      "path": "data/users-sign-in--tenants--home.data.ts",
+      "action": "modify",
       "kind": "data"
     }
   ],
-  "summary": "Emit navigate-to-invoices-page-and-verify-content via registry-first path (UsersSignInPage, TenantsPage, AccountsPage2, AccountsInvoicesPage)"
+  "summary": "Emit successfully-sign-out-after-selecting-a-tenant via registry-first path (UsersSignInPage, TenantsPage, HomePage)"
 }

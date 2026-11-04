@@ -20,10 +20,4 @@ export class SubscriptionsNewPage {
       await expect(this.planField).toBeVisible();
     }, { box: true });
   }
-
-  async expectLoaded2(): Promise<void> {
-    await test.step('expectLoaded2()', async () => {
-      await expect(this.planField).toBeVisible();
-    }, { box: true });
-  }
 }

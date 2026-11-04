@@ -1,9 +1,9 @@
 {
   "contract_version": "1.1.0",
-  "run_id": "72a1efab-ad06-4f4d-b329-f96148937c22",
+  "run_id": "723bfb6b-7eaa-4364-abd6-3bdf45dd8671",
   "files": [
     {
-      "path": "tests/users-sign-in--tenants--accounts-page2/verify-account-detail-page-elements.spec.ts",
+      "path": "tests/users-sign-in--tenants--accounts-bundles--subscriptions-new/check-for-annual-plan-offering.spec.ts",
       "action": "modify",
       "kind": "test"
     },
@@ -28,20 +28,30 @@
       "kind": "selectors"
     },
     {
-      "path": "pages/AccountsPage2.page.ts",
+      "path": "pages/AccountsBundlesPage.page.ts",
       "action": "modify",
       "kind": "page"
     },
     {
-      "path": "pages/AccountsPage2.selectors.json",
+      "path": "pages/AccountsBundlesPage.selectors.json",
       "action": "modify",
       "kind": "selectors"
     },
     {
-      "path": "data/users-sign-in--tenants--accounts-page2.data.ts",
+      "path": "pages/SubscriptionsNewPage.page.ts",
+      "action": "modify",
+      "kind": "page"
+    },
+    {
+      "path": "pages/SubscriptionsNewPage.selectors.json",
+      "action": "modify",
+      "kind": "selectors"
+    },
+    {
+      "path": "data/users-sign-in--tenants--accounts-bundles--subscriptions-new.data.ts",
       "action": "modify",
       "kind": "data"
     }
   ],
-  "summary": "Emit verify-account-detail-page-elements via registry-first path (UsersSignInPage, TenantsPage, AccountsPage2)"
+  "summary": "Emit check-for-annual-plan-offering via registry-first path (UsersSignInPage, TenantsPage, AccountsBundlesPage, SubscriptionsNewPage)"
 }

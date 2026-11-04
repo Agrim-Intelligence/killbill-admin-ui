@@ -1,0 +1,16 @@
+{
+  "contract_version": "1.1.0",
+  "class": "TenantsPage",
+  "route": "/tenants",
+  "elements": {
+    "saveButton": {
+      "intent": "The submit button on the sign-in form",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "button[name=Save]"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "contract_version": "1.1.0",
+  "run_id": "5f8a3c1b-31e0-46aa-aed7-23b004836cb8",
+  "files": [
+    {
+      "path": "tests/users-sign-in--tenants--home/successful-admin-sign-in.spec.ts",
+      "action": "add",
+      "kind": "test"
+    },
+    {
+      "path": "pages/UsersSignInPage.page.ts",
+      "action": "add",
+      "kind": "page"
+    },
+    {
+      "path": "pages/UsersSignInPage.selectors.json",
+      "action": "add",
+      "kind": "selectors"
+    },
+    {
+      "path": "pages/TenantsPage.page.ts",
+      "action": "add",
+      "kind": "page"
+    },
+    {
+      "path": "pages/TenantsPage.selectors.json",
+      "action": "add",
+      "kind": "selectors"
+    },
+    {
+      "path": "pages/HomePage.page.ts",
+      "action": "add",
+      "kind": "page"
+    },
+    {
+      "path": "pages/HomePage.selectors.json",
+      "action": "add",
+      "kind": "selectors"
+    },
+    {
+      "path": "data/users-sign-in--tenants--home.data.ts",
+      "action": "add",
+      "kind": "data"
+    }
+  ],
+  "summary": "Emit successful-admin-sign-in via registry-first path (UsersSignInPage, TenantsPage, HomePage)"
+}

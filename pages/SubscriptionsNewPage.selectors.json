@@ -1,0 +1,29 @@
+{
+  "contract_version": "1.1.0",
+  "class": "SubscriptionsNewPage",
+  "route": "/subscriptions/new",
+  "elements": {
+    "planField": {
+      "intent": "The control labelled \"Plan\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByLabel",
+          "value": "Plan"
+        },
+        {
+          "strategy": "getByRole",
+          "value": "combobox[name=Plan]"
+        }
+      ]
+    },
+    "bodyLocator": {
+      "intent": "The control labelled \"body\" on the page",
+      "candidates": [
+        {
+          "strategy": "locator",
+          "value": "body"
+        }
+      ]
+    }
+  }
+}

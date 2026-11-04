@@ -1,9 +1,9 @@
 {
   "contract_version": "1.1.0",
-  "run_id": "9ffe29ca-90d2-4d6a-921a-c01506315ef1",
+  "run_id": "6af29856-073a-4b04-8b98-03a3bcacb220",
   "files": [
     {
-      "path": "tests/users-sign-in--accounts--accounts-page2/search-for-an-account-by-client-name-and-verify-details.spec.ts",
+      "path": "tests/users-sign-in--tenants--accounts-page2--accounts-bundles--subscriptions-new/start-a-new-pro-monthly-subscription-for-acme-account.spec.ts",
       "action": "add",
       "kind": "test"
     },
@@ -18,13 +18,13 @@
       "kind": "selectors"
     },
     {
-      "path": "pages/AccountsPage.page.ts",
-      "action": "add",
+      "path": "pages/TenantsPage.page.ts",
+      "action": "modify",
       "kind": "page"
     },
     {
-      "path": "pages/AccountsPage.selectors.json",
-      "action": "add",
+      "path": "pages/TenantsPage.selectors.json",
+      "action": "modify",
       "kind": "selectors"
     },
     {
@@ -38,10 +38,30 @@
       "kind": "selectors"
     },
     {
-      "path": "data/users-sign-in--accounts--accounts-page2.data.ts",
+      "path": "pages/AccountsBundlesPage.page.ts",
+      "action": "modify",
+      "kind": "page"
+    },
+    {
+      "path": "pages/AccountsBundlesPage.selectors.json",
+      "action": "modify",
+      "kind": "selectors"
+    },
+    {
+      "path": "pages/SubscriptionsNewPage.page.ts",
+      "action": "add",
+      "kind": "page"
+    },
+    {
+      "path": "pages/SubscriptionsNewPage.selectors.json",
+      "action": "add",
+      "kind": "selectors"
+    },
+    {
+      "path": "data/users-sign-in--tenants--accounts-page2--accounts-bundles--subscriptions-new.data.ts",
       "action": "add",
       "kind": "data"
     }
   ],
-  "summary": "Emit search-for-an-account-by-client-name-and-verify-details via registry-first path (UsersSignInPage, AccountsPage, AccountsPage2)"
+  "summary": "Emit start-a-new-pro-monthly-subscription-for-acme-account via registry-first path (UsersSignInPage, TenantsPage, AccountsPage2, AccountsBundlesPage, SubscriptionsNewPage)"
 }

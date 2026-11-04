@@ -211,6 +211,6 @@ export function testData<T extends Defaults>(byFeature: Record<string, T>): Reso
 
 export const usersSignInTenantsAccountsPage2Data = testData({
   "users-sign-in--tenants--accounts-page2": {
-    verifyAccountDetailPageElements: { username: "admin", password: credential(), kbTenantId: "Acme Test Tenant" },
+    selectTenantOpenAccountsAndViewFirstAccountDetails: { username: "admin", password: credential(), kbTenantId: "Acme Test Tenant" },
   },
 });

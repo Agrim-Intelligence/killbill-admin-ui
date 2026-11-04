@@ -3,12 +3,12 @@
   "class": "UsersSignInPage",
   "route": "/users/sign_in",
   "elements": {
-    "usernameTextbox": {
-      "intent": "The username input on the sign-in form",
+    "signInButton": {
+      "intent": "The submit button on the sign-in form",
       "candidates": [
         {
           "strategy": "getByRole",
-          "value": "textbox[name=Username]"
+          "value": "button[name=Sign in]"
         }
       ]
     },
@@ -21,12 +21,12 @@
         }
       ]
     },
-    "signInButton": {
-      "intent": "The submit button on the sign-in form",
+    "usernameTextbox": {
+      "intent": "The username input on the sign-in form",
       "candidates": [
         {
           "strategy": "getByRole",
-          "value": "button[name=Sign in]"
+          "value": "textbox[name=Username]"
         }
       ]
     }

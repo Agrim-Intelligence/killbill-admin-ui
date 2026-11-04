@@ -5,17 +5,17 @@ import { Page, Locator, test } from '@playwright/test';
 export class UsersSignInPage {
   static readonly route = '/users/sign_in';
 
-  /** The username input on the sign-in form */
-  private readonly usernameTextbox: Locator;
-  /** The password input on the sign-in form */
-  private readonly passwordTextbox: Locator;
   /** The submit button on the sign-in form */
   private readonly signInButton: Locator;
+  /** The password input on the sign-in form */
+  private readonly passwordTextbox: Locator;
+  /** The username input on the sign-in form */
+  private readonly usernameTextbox: Locator;
 
   constructor(private readonly page: Page) {
-    this.usernameTextbox = page.getByRole('textbox', { name: 'Username' });
-    this.passwordTextbox = page.getByRole('textbox', { name: 'Password' });
     this.signInButton = page.getByRole('button', { name: 'Sign in' });
+    this.passwordTextbox = page.getByRole('textbox', { name: 'Password' });
+    this.usernameTextbox = page.getByRole('textbox', { name: 'Username' });
   }
 
   async signIn(username: string, password: string): Promise<void> {

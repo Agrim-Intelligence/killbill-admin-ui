@@ -1,9 +1,9 @@
 {
   "contract_version": "1.1.0",
-  "run_id": "2976ae48-402f-4228-8555-cfed0a2bc7f1",
+  "run_id": "b748c89b-8af7-499e-aa01-4fdd7653b9e5",
   "files": [
     {
-      "path": "tests/users-sign-in--tenants--home/successfully-sign-out-after-selecting-a-tenant.spec.ts",
+      "path": "tests/users-sign-in--tenants--accounts/select-acme-test-tenant-and-navigate-to-accounts.spec.ts",
       "action": "modify",
       "kind": "test"
     },
@@ -28,20 +28,20 @@
       "kind": "selectors"
     },
     {
-      "path": "pages/HomePage.page.ts",
+      "path": "pages/AccountsPage.page.ts",
       "action": "modify",
       "kind": "page"
     },
     {
-      "path": "pages/HomePage.selectors.json",
+      "path": "pages/AccountsPage.selectors.json",
       "action": "modify",
       "kind": "selectors"
     },
     {
-      "path": "data/users-sign-in--tenants--home.data.ts",
+      "path": "data/users-sign-in--tenants--accounts.data.ts",
       "action": "modify",
       "kind": "data"
     }
   ],
-  "summary": "Emit successfully-sign-out-after-selecting-a-tenant via registry-first path (UsersSignInPage, TenantsPage, HomePage)"
+  "summary": "Emit select-acme-test-tenant-and-navigate-to-accounts via registry-first path (UsersSignInPage, TenantsPage, AccountsPage)"
 }

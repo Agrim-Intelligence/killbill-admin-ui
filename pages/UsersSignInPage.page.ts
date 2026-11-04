@@ -1,6 +1,6 @@
 // Generated from pages/UsersSignInPage.selectors.json. Do not edit by hand:
 // change the selectors JSON and regenerate, so the fix is one reviewable line.
-import { Page, Locator, expect, test } from '@playwright/test';
+import { Page, Locator, test } from '@playwright/test';
 
 export class UsersSignInPage {
   static readonly route = '/users/sign_in';
@@ -23,12 +23,6 @@ export class UsersSignInPage {
       await this.usernameTextbox.fill(username);
       await this.passwordTextbox.fill(password);
       await this.signInButton.click();
-    }, { box: true });
-  }
-
-  async expectLoaded(): Promise<void> {
-    await test.step('expectLoaded()', async () => {
-      await expect(this.signInButton).toBeVisible();
     }, { box: true });
   }
 }

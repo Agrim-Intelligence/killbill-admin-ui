@@ -1,10 +1,10 @@
 {
   "contract_version": "1.1.0",
-  "run_id": "6af29856-073a-4b04-8b98-03a3bcacb220",
+  "run_id": "72a1efab-ad06-4f4d-b329-f96148937c22",
   "files": [
     {
-      "path": "tests/users-sign-in--tenants--accounts-page2--accounts-bundles--subscriptions-new/start-a-new-pro-monthly-subscription-for-acme-account.spec.ts",
-      "action": "add",
+      "path": "tests/users-sign-in--tenants--accounts-page2/verify-account-detail-page-elements.spec.ts",
+      "action": "modify",
       "kind": "test"
     },
     {
@@ -38,30 +38,10 @@
       "kind": "selectors"
     },
     {
-      "path": "pages/AccountsBundlesPage.page.ts",
+      "path": "data/users-sign-in--tenants--accounts-page2.data.ts",
       "action": "modify",
-      "kind": "page"
-    },
-    {
-      "path": "pages/AccountsBundlesPage.selectors.json",
-      "action": "modify",
-      "kind": "selectors"
-    },
-    {
-      "path": "pages/SubscriptionsNewPage.page.ts",
-      "action": "add",
-      "kind": "page"
-    },
-    {
-      "path": "pages/SubscriptionsNewPage.selectors.json",
-      "action": "add",
-      "kind": "selectors"
-    },
-    {
-      "path": "data/users-sign-in--tenants--accounts-page2--accounts-bundles--subscriptions-new.data.ts",
-      "action": "add",
       "kind": "data"
     }
   ],
-  "summary": "Emit start-a-new-pro-monthly-subscription-for-acme-account via registry-first path (UsersSignInPage, TenantsPage, AccountsPage2, AccountsBundlesPage, SubscriptionsNewPage)"
+  "summary": "Emit verify-account-detail-page-elements via registry-first path (UsersSignInPage, TenantsPage, AccountsPage2)"
 }

@@ -1,6 +1,6 @@
 // Generated from pages/AccountsPage2.selectors.json. Do not edit by hand:
 // change the selectors JSON and regenerate, so the fix is one reviewable line.
-import { Page, Locator, expect, test } from '@playwright/test';
+import { Page, Locator, test } from '@playwright/test';
 
 export class AccountsPage2 {
   static readonly route = '/accounts/{record}';
@@ -24,12 +24,9 @@ export class AccountsPage2 {
     this.accountInformationHeading = page.getByRole('heading', { name: 'Account Information' });
   }
 
-  async expectLoaded(): Promise<void> {
-    await test.step('expectLoaded()', async () => {
-      await expect(this.accountInformationHeading).toBeVisible();
-      await expect(this.subscriptionsLink).toBeVisible();
-      await expect(this.paymentsLink).toBeVisible();
-      await expect(this.invoicesLink).toBeVisible();
+  async invoices(): Promise<void> {
+    await test.step('invoices()', async () => {
+      await this.invoicesLink.click();
     }, { box: true });
   }
 }

@@ -10,6 +10,8 @@ vendor:
     line_rule: '^v4\.0\.'
 lines:
   - {id: "v4.0", status: active, branch: master, match: '^4\.0\.'}
+  # Next line, for the release-line confirm scenario (S23). Nothing is deployed on 4.1 yet.
+  - {id: "v4.1", status: active, branch: "release/4.1", match: '^4\.1\.'}
 deployments:
   - id: "staging"
     kind: pre-production

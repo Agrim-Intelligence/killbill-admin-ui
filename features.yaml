@@ -8,3 +8,9 @@ features:
     title: User Authentication
   test123:
     title: Test 123
+  home:
+    title: Home
+  tenants:
+    title: Tenants
+  users-sign-in--tenants:
+    title: users sign in

@@ -1,4 +1,16 @@
 # Fleet feature list. Operator-owned: edit freely, the scaffold never overwrites it.
 # Empty on purpose: only the built-in core feature is known until features are added here
 # (Omega proposes them as pull requests; see omega/README.md for the ones this demo expects).
-features: {}
+features:
+  user-login:
+    title: User Login
+  user-authentication:
+    title: User Authentication
+  test123:
+    title: Test 123
+  home:
+    title: Home
+  tenants:
+    title: Tenants
+  users-sign-in--tenants:
+    title: users sign in

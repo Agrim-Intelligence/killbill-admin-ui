@@ -4,3 +4,5 @@
 features:
   user-login:
     title: User Login
+  user-authentication:
+    title: User Authentication

@@ -53,7 +53,17 @@
       "candidates": [
         {
           "strategy": "getByRole",
-          "value": "heading[name=Accounts]"
+          "value": "heading[name=Accounts]",
+          "exact": true
+        }
+      ]
+    },
+    "bodyLocator": {
+      "intent": "The control labelled \"body\" on the page",
+      "candidates": [
+        {
+          "strategy": "locator",
+          "value": "body"
         }
       ]
     }

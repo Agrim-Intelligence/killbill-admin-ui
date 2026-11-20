@@ -25,15 +25,15 @@ clients:
   - id: "client-a"
     name: Acme
     links:
-      - {id: "client-a_staging", deployment: "staging", features: {annual_billing: true, pro_tier: true, trial: false}}
-      - {id: "client-a_uat", deployment: "uat", promotes_from: "client-a_staging", features: {annual_billing: true, pro_tier: true, trial: false}}
+      - {id: "client-a_staging", deployment: "staging", features: {annual_billing: true, pro_tier: true, trial: false}, effects_allowed: [email, text, payment, partner], outbound_safe: {email: disabled, text: disabled, payment: test-mode, partner: disabled}}
+      - {id: "client-a_uat", deployment: "uat", promotes_from: "client-a_staging", features: {annual_billing: true, pro_tier: true, trial: false}, effects_allowed: [email, text, payment, partner], outbound_safe: {email: disabled, text: disabled, payment: test-mode, partner: disabled}}
   - id: "client-b"
     name: Globex
     links:
-      - {id: "client-b_staging", deployment: "staging", features: {annual_billing: true, pro_tier: false, trial: false}}
-      - {id: "client-b_uat", deployment: "uat", promotes_from: "client-b_staging", features: {annual_billing: true, pro_tier: false, trial: false}}
+      - {id: "client-b_staging", deployment: "staging", features: {annual_billing: true, pro_tier: false, trial: false}, effects_allowed: [email, text, payment, partner], outbound_safe: {email: disabled, text: disabled, payment: test-mode, partner: disabled}}
+      - {id: "client-b_uat", deployment: "uat", promotes_from: "client-b_staging", features: {annual_billing: true, pro_tier: false, trial: false}, effects_allowed: [email, text, payment, partner], outbound_safe: {email: disabled, text: disabled, payment: test-mode, partner: disabled}}
   - id: "client-c"
     name: Initech
     links:
-      - {id: "client-c_staging", deployment: "staging", features: {annual_billing: false, pro_tier: false, trial: true}}
-      - {id: "client-c_uat", deployment: "uat", promotes_from: "client-c_staging", features: {annual_billing: false, pro_tier: false, trial: true}}
+      - {id: "client-c_staging", deployment: "staging", features: {annual_billing: false, pro_tier: false, trial: true}, effects_allowed: [email, text, payment, partner], outbound_safe: {email: disabled, text: disabled, payment: test-mode, partner: disabled}}
+      - {id: "client-c_uat", deployment: "uat", promotes_from: "client-c_staging", features: {annual_billing: false, pro_tier: false, trial: true}, effects_allowed: [email, text, payment, partner], outbound_safe: {email: disabled, text: disabled, payment: test-mode, partner: disabled}}

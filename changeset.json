@@ -1,9 +1,9 @@
 {
   "contract_version": "1.1.0",
-  "run_id": "b748c89b-8af7-499e-aa01-4fdd7653b9e5",
+  "run_id": "62d590d3-34e8-498c-8917-9b0bdfd06e36",
   "files": [
     {
-      "path": "tests/users-sign-in--tenants--accounts/select-acme-test-tenant-and-navigate-to-accounts.spec.ts",
+      "path": "tests/users-sign-in--tenants--accounts/verify-account-list-shows-at-least-one-account.spec.ts",
       "action": "modify",
       "kind": "test"
     },
@@ -38,10 +38,15 @@
       "kind": "selectors"
     },
     {
-      "path": "data/users-sign-in--tenants--accounts.data.ts",
+      "path": "data/users-sign-in--tenants--accounts/verify-account-list-shows-at-least-one-account.data.ts",
+      "action": "modify",
+      "kind": "data"
+    },
+    {
+      "path": "data/_omega.data.ts",
       "action": "modify",
       "kind": "data"
     }
   ],
-  "summary": "Emit select-acme-test-tenant-and-navigate-to-accounts via registry-first path (UsersSignInPage, TenantsPage, AccountsPage)"
+  "summary": "Emit verify-account-list-shows-at-least-one-account via registry-first path (UsersSignInPage, TenantsPage, AccountsPage)"
 }

@@ -16,7 +16,7 @@ deployments:
   - id: "staging"
     kind: pre-production
     base_url: "https://kaui-production-8bf2.up.railway.app"
-    version: "4.0.31"
+    version: "4.1.0"
   - id: "uat"
     kind: pre-production
     base_url: "https://kaui-uat-production.up.railway.app"

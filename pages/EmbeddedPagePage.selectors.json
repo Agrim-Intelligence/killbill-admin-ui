@@ -1,0 +1,40 @@
+{
+  "contract_version": "1.1.0",
+  "class": "EmbeddedPagePage",
+  "route": "/embedded-page",
+  "elements": {
+    "embeddedPageLink": {
+      "intent": "The control labelled \"Embedded page\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "link[name=Embedded page]"
+        }
+      ]
+    },
+    "embeddedPageHeading": {
+      "intent": "The control labelled \"Embedded page\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "heading[name=Embedded page]"
+        }
+      ]
+    },
+    "learnMoreLink": {
+      "intent": "The control labelled \"Learn more\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "link[name=Learn more]",
+          "frame": [
+            {
+              "strategy": "locator",
+              "value": "iframe[name=\"embed-frame\"]"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

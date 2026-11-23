@@ -1,0 +1,20 @@
+# Omega fleet registry for the Kill Bill test target.
+# Minimal: one release line, the QA deployment Omega tests against, one client.
+# Add clients and environments from Omega's Fleet page; it proposes changes here as pull requests.
+version: 1
+vendor:
+  name: Kill Bill test target
+  release_profile:
+    tests_live_in: product-repo
+    product_branch_rule: master
+lines:
+  - {id: "default", status: active, branch: master}
+deployments:
+  - id: "qa"
+    kind: pre-production
+    base_url: "https://kaui-qa-production.up.railway.app"
+clients:
+  - id: "default"
+    name: Default
+    links:
+      - {id: "default_qa", deployment: "qa"}

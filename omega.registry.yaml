@@ -1,6 +1,4 @@
-# Omega fleet registry for the Kill Bill test target.
-# Minimal: one release line, the QA deployment Omega tests against, one client.
-# Add clients and environments from Omega's Fleet page; it proposes changes here as pull requests.
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Agrim-Intelligence/omega/pre-prod/docs/CONTRACTS/omega-registry.v1.schema.json
 version: 1
 vendor:
   name: Kill Bill test target
@@ -8,13 +6,30 @@ vendor:
     tests_live_in: product-repo
     product_branch_rule: master
 lines:
-  - {id: "default", status: active, branch: master}
+- id: default
+  status: active
+  branch: master
 deployments:
-  - id: "qa"
-    kind: pre-production
-    base_url: "https://kaui-qa-production.up.railway.app"
+- id: qa
+  kind: pre-production
+  base_url: https://kaui-qa-production.up.railway.app
+- id: uat
+  kind: pre-production
+  base_url: https://kaui-uat-production.up.railway.app
+- id: staging
+  kind: pre-production
+  base_url: https://kaui-production-8bf2.up.railway.app
 clients:
-  - id: "default"
-    name: Default
-    links:
-      - {id: "default_qa", deployment: "qa"}
+- id: default
+  name: Default
+  links:
+  - id: default_qa
+    deployment: qa
+  - id: default_uat
+    deployment: uat
+    accounts:
+    - admin
+  - id: default_staging
+    deployment: staging
+    accounts:
+    - admin

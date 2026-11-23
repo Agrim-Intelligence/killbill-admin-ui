@@ -19,6 +19,9 @@ deployments:
 - id: staging
   kind: pre-production
   base_url: https://kaui-production-8bf2.up.railway.app
+- id: negtest
+  kind: pre-production
+  base_url: http://kaui.example.test
 clients:
 - id: default
   name: Default
@@ -31,5 +34,12 @@ clients:
     - admin
   - id: default_staging
     deployment: staging
+    accounts:
+    - admin
+- id: client-n
+  name: Client N
+  links:
+  - id: client-n_negtest
+    deployment: negtest
     accounts:
     - admin

@@ -33,3 +33,17 @@ clients:
     deployment: staging
     accounts:
     - admin
+- id: client-a
+  name: Client A
+  links:
+  - id: client-a_qa
+    deployment: qa
+    accounts:
+    - admin
+- id: client-b
+  name: Client B
+  links:
+  - id: client-b_uat
+    deployment: uat
+    accounts:
+    - admin

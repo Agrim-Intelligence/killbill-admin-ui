@@ -21,6 +21,15 @@
         }
       ]
     },
+    "accountsViewAllLink": {
+      "intent": "The control labelled \"View All\" on the page",
+      "candidates": [
+        {
+          "strategy": "locator",
+          "value": "a[href=\"/accounts\"]:has-text(\"View All\")"
+        }
+      ]
+    },
     "embeddedPageLink": {
       "intent": "The control labelled \"Embedded page\" on the page",
       "candidates": [
@@ -30,12 +39,12 @@
         }
       ]
     },
-    "accountsViewAllLink": {
-      "intent": "The control labelled \"View All\" on the page",
+    "customFieldsCreateCustomLink": {
+      "intent": "The control labelled \"Custom Fields Create custom\" on the page",
       "candidates": [
         {
-          "strategy": "locator",
-          "value": "a[href=\"/accounts\"]:has-text(\"View All\")"
+          "strategy": "getByRole",
+          "value": "link[name=Custom Fields Create custom]"
         }
       ]
     }

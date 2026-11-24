@@ -9,16 +9,25 @@ export class UsersSignInPage {
   private readonly closeButton: Locator;
   /** The control labelled "You need to sign in before continuing." on the page */
   private readonly youNeedToSignInBeforeContinuingText: Locator;
-  /** The control labelled "Embedded page" on the page */
-  private readonly embeddedPageLink: Locator;
   /** The control labelled "View All" on the page */
   private readonly accountsViewAllLink: Locator;
+  /** The control labelled "Embedded page" on the page */
+  private readonly embeddedPageLink: Locator;
+  /** The control labelled "Custom Fields Create custom" on the page */
+  private readonly customFieldsCreateCustomLink: Locator;
 
   constructor(private readonly page: Page) {
     this.closeButton = page.getByRole('button', { name: 'Close' });
     this.youNeedToSignInBeforeContinuingText = page.getByText('You need to sign in before continuing.');
-    this.embeddedPageLink = page.getByRole('link', { name: 'Embedded page' });
     this.accountsViewAllLink = page.locator('a[href="/accounts"]:has-text("View All")');
+    this.embeddedPageLink = page.getByRole('link', { name: 'Embedded page' });
+    this.customFieldsCreateCustomLink = page.getByRole('link', { name: 'Custom Fields Create custom' });
+  }
+
+  async customFieldsCreateCustom(): Promise<void> {
+    await test.step('customFieldsCreateCustom()', async () => {
+      await this.customFieldsCreateCustomLink.click();
+    }, { box: true });
   }
 
   async embeddedPage(): Promise<void> {

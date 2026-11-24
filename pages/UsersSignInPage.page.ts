@@ -21,6 +21,12 @@ export class UsersSignInPage {
     this.accountsViewAllLink = page.locator('a[href="/accounts"]:has-text("View All")');
   }
 
+  async embeddedPage(): Promise<void> {
+    await test.step('embeddedPage()', async () => {
+      await this.embeddedPageLink.click();
+    }, { box: true });
+  }
+
   async accountsViewAll(): Promise<void> {
     await test.step('accountsViewAll()', async () => {
       await this.accountsViewAllLink.click();

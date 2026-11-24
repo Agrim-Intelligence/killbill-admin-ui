@@ -47,6 +47,15 @@
           "value": "link[name=Custom Fields Create custom]"
         }
       ]
+    },
+    "tagsApplyOneOrMoreTagsLink": {
+      "intent": "The control labelled \"Tags Apply one or more tags\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "link[name=Tags Apply one or more tags]"
+        }
+      ]
     }
   }
 }

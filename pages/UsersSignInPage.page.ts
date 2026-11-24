@@ -15,6 +15,8 @@ export class UsersSignInPage {
   private readonly embeddedPageLink: Locator;
   /** The control labelled "Custom Fields Create custom" on the page */
   private readonly customFieldsCreateCustomLink: Locator;
+  /** The control labelled "Tags Apply one or more tags" on the page */
+  private readonly tagsApplyOneOrMoreTagsLink: Locator;
 
   constructor(private readonly page: Page) {
     this.closeButton = page.getByRole('button', { name: 'Close' });
@@ -22,6 +24,13 @@ export class UsersSignInPage {
     this.accountsViewAllLink = page.locator('a[href="/accounts"]:has-text("View All")');
     this.embeddedPageLink = page.getByRole('link', { name: 'Embedded page' });
     this.customFieldsCreateCustomLink = page.getByRole('link', { name: 'Custom Fields Create custom' });
+    this.tagsApplyOneOrMoreTagsLink = page.getByRole('link', { name: 'Tags Apply one or more tags' });
+  }
+
+  async tagsApplyOneOrMoreTags(): Promise<void> {
+    await test.step('tagsApplyOneOrMoreTags()', async () => {
+      await this.tagsApplyOneOrMoreTagsLink.click();
+    }, { box: true });
   }
 
   async customFieldsCreateCustom(): Promise<void> {

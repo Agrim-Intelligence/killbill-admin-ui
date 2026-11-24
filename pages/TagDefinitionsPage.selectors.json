@@ -1,0 +1,43 @@
+{
+  "contract_version": "1.1.0",
+  "class": "TagDefinitionsPage",
+  "route": "/tag_definitions",
+  "elements": {
+    "createDefinitionLink": {
+      "intent": "The control labelled \"Create Definition\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "link[name=Create Definition]"
+        }
+      ]
+    },
+    "nameTextbox": {
+      "intent": "The control labelled \"Name\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "textbox[name=Name]"
+        }
+      ]
+    },
+    "saveDefinitionButton": {
+      "intent": "The submit button on the sign-in form",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "button[name=Save Definition]"
+        }
+      ]
+    },
+    "tableControl": {
+      "intent": "The tableControl control on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "table"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "contract_version": "1.1.0",
+  "class": "UsersSignInPage",
+  "route": "/users/sign_in",
+  "elements": {
+    "youNeedToSignInBeforeContinuingText": {
+      "intent": "The control labelled \"You need to sign in before continuing.\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByText",
+          "value": "You need to sign in before continuing."
+        }
+      ]
+    },
+    "closeButton": {
+      "intent": "The submit button on the sign-in form",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "button[name=Close]"
+        }
+      ]
+    }
+  }
+}

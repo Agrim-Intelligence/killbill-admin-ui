@@ -1,8 +1,17 @@
 {
   "contract_version": "1.1.0",
   "class": "UsersSignInPage",
-  "route": "/users/sign_in",
+  "route": "/home",
   "elements": {
+    "closeButton": {
+      "intent": "The submit button on the sign-in form",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "button[name=Close]"
+        }
+      ]
+    },
     "youNeedToSignInBeforeContinuingText": {
       "intent": "The control labelled \"You need to sign in before continuing.\" on the page",
       "candidates": [
@@ -12,12 +21,21 @@
         }
       ]
     },
-    "closeButton": {
-      "intent": "The submit button on the sign-in form",
+    "embeddedPageLink": {
+      "intent": "The control labelled \"Embedded page\" on the page",
       "candidates": [
         {
           "strategy": "getByRole",
-          "value": "button[name=Close]"
+          "value": "link[name=Embedded page]"
+        }
+      ]
+    },
+    "accountsViewAllLink": {
+      "intent": "The control labelled \"View All\" on the page",
+      "candidates": [
+        {
+          "strategy": "locator",
+          "value": "a[href=\"/accounts\"]:has-text(\"View All\")"
         }
       ]
     }

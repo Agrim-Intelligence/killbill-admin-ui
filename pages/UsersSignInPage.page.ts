@@ -3,16 +3,28 @@
 import { Page, Locator, expect, test } from '@playwright/test';
 
 export class UsersSignInPage {
-  static readonly route = '/users/sign_in';
+  static readonly route = '/home';
 
-  /** The control labelled "You need to sign in before continuing." on the page */
-  private readonly youNeedToSignInBeforeContinuingText: Locator;
   /** The submit button on the sign-in form */
   private readonly closeButton: Locator;
+  /** The control labelled "You need to sign in before continuing." on the page */
+  private readonly youNeedToSignInBeforeContinuingText: Locator;
+  /** The control labelled "Embedded page" on the page */
+  private readonly embeddedPageLink: Locator;
+  /** The control labelled "View All" on the page */
+  private readonly accountsViewAllLink: Locator;
 
   constructor(private readonly page: Page) {
-    this.youNeedToSignInBeforeContinuingText = page.getByText('You need to sign in before continuing.');
     this.closeButton = page.getByRole('button', { name: 'Close' });
+    this.youNeedToSignInBeforeContinuingText = page.getByText('You need to sign in before continuing.');
+    this.embeddedPageLink = page.getByRole('link', { name: 'Embedded page' });
+    this.accountsViewAllLink = page.locator('a[href="/accounts"]:has-text("View All")');
+  }
+
+  async accountsViewAll(): Promise<void> {
+    await test.step('accountsViewAll()', async () => {
+      await this.accountsViewAllLink.click();
+    }, { box: true });
   }
 
   async expectLoaded(): Promise<void> {

@@ -11,6 +11,15 @@
           "value": "link[name=Tag Definitions]"
         }
       ]
+    },
+    "tagsHeading": {
+      "intent": "The control labelled \"Tags\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "heading[name=Tags]"
+        }
+      ]
     }
   }
 }

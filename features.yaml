@@ -7,3 +7,27 @@ features:
     title: auth
   '1':
     title: embedded
+  payments:
+    title: Payments
+  tag-definitions:
+    title: Tag Definitions
+  payment-methods:
+    title: Payment Methods
+  queues:
+    title: Queues
+  kpm:
+    title: Kpm
+  admin-allowed-users:
+    title: Admin Allowed Users
+  invoices:
+    title: Invoices
+  embedded-page:
+    title: Embedded Page
+  custom-fields:
+    title: Custom Fields
+  admin-tenants:
+    title: Admin Tenants
+  tags:
+    title: Tags
+  subscriptions:
+    title: Subscriptions

@@ -30,15 +30,15 @@ export class UsersSignInPage {
     this.createAccountButton = page.getByRole('button', { name: 'Create Account' });
   }
 
-  async createAccount(): Promise<void> {
-    await test.step('createAccount()', async () => {
-      await this.createAccountButton.click();
-    }, { box: true });
-  }
-
   async tagsApplyOneOrMoreTags(): Promise<void> {
     await test.step('tagsApplyOneOrMoreTags()', async () => {
       await this.tagsApplyOneOrMoreTagsLink.click();
+    }, { box: true });
+  }
+
+  async createAccount(): Promise<void> {
+    await test.step('createAccount()', async () => {
+      await this.createAccountButton.click();
     }, { box: true });
   }
 

@@ -7,7 +7,7 @@ import { TagDefinitionsPage } from "../../pages/TagDefinitionsPage.page";
 import { TagDefinitionsNewPage } from "../../pages/TagDefinitionsNewPage.page";
 import { usersSignInPage3TenantsUsersSignInTagsTagDefinitionsTag7940549bData } from "../../data/users-sign-in-page3--tenants--users-sign-in--tags--tag-definitions--tag-7940549b/create-a-new-tag-definition.data";
 
-test("Create a new tag definition", { tag: ["@id:t_091b6ec1", "@feature:core"], annotation: [{ type: "issue", description: "unlinked" }, { type: "side-effects", description: "none" }] }, async ({ page }) => {
+test("Create a new tag definition", { tag: ["@id:t_091b6ec1", "@feature:tag-definitions"], annotation: [{ type: "issue", description: "unlinked" }, { type: "side-effects", description: "none" }] }, async ({ page }) => {
   await page.goto("/users/sign_in");
   const usersSignInPage3 = new UsersSignInPage3(page);
   const tenantsPage = new TenantsPage(page);

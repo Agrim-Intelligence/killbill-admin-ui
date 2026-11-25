@@ -1,3 +1,5 @@
 features:
   accounts:
     title: Accounts
+  user-authentication:
+    title: User Authentication

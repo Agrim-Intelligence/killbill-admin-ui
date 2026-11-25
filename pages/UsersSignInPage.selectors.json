@@ -56,6 +56,15 @@
           "value": "link[name=Tags Apply one or more tags]"
         }
       ]
+    },
+    "createAccountButton": {
+      "intent": "The submit button on the sign-in form",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "button[name=Create Account]"
+        }
+      ]
     }
   }
 }

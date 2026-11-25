@@ -3,6 +3,15 @@
   "class": "AccountsPage",
   "route": "/accounts",
   "elements": {
+    "nameTable": {
+      "intent": "The nameTable control on the page",
+      "candidates": [
+        {
+          "strategy": "locator",
+          "value": "role=table >> internal:has=\"role=columnheader[name=\\\"Name\\\"i]\" >> role=rowgroup >> internal:has-not=\"role=columnheader\""
+        }
+      ]
+    },
     "whatAreYouLookingForTextbox": {
       "intent": "The control labelled \"What are you looking for?\" on the page",
       "candidates": [
@@ -11,16 +20,6 @@
           "value": "textbox[name=What are you looking for?]"
         }
       ]
-    },
-    "nameTable": {
-      "intent": "The nameTable control on the page",
-      "candidates": [
-        {
-          "strategy": "locator",
-          "value": "role=table >> internal:has=\"role=columnheader[name=\\\"Name\\\"i]\" >> role=rowgroup >> internal:has-not=\"role=columnheader\""
-        }
-      ],
-      "items": "row"
     }
   }
 }

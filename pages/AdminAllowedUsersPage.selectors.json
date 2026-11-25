@@ -1,0 +1,16 @@
+{
+  "contract_version": "1.1.0",
+  "class": "AdminAllowedUsersPage",
+  "route": "/admin_allowed_users",
+  "elements": {
+    "tableControl": {
+      "intent": "The tableControl control on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "table"
+        }
+      ]
+    }
+  }
+}

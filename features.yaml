@@ -5,3 +5,5 @@ features:
     title: User Authentication
   users-sign-in:
     title: auth
+  '1':
+    title: embedded

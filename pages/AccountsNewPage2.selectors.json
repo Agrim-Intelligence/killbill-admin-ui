@@ -1,0 +1,43 @@
+{
+  "contract_version": "1.1.0",
+  "class": "AccountsNewPage2",
+  "route": "/accounts/new",
+  "elements": {
+    "emailTextbox": {
+      "intent": "The control labelled \"Email\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "textbox[name=Email]"
+        }
+      ]
+    },
+    "currencyField": {
+      "intent": "The control labelled \"Currency\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByLabel",
+          "value": "Currency"
+        }
+      ]
+    },
+    "userNameTextbox": {
+      "intent": "The control labelled \"User name\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "textbox[name=User name]"
+        }
+      ]
+    },
+    "saveAccountButton": {
+      "intent": "The submit button on the sign-in form",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "button[name=Save Account]"
+        }
+      ]
+    }
+  }
+}

@@ -5,7 +5,7 @@ import { UsersSignInPage } from "../../pages/UsersSignInPage.page";
 import { CustomFieldsPage } from "../../pages/CustomFieldsPage.page";
 import { usersSignInPage3TenantsUsersSignInCustomFieldsData } from "../../data/users-sign-in-page3--tenants--users-sign-in--custom-fields/admin-user-views-custom-fields-page.data";
 
-test("Admin user views Custom Fields page", { tag: ["@id:t_48088fcb", "@feature:core"], annotation: [{ type: "issue", description: "unlinked" }, { type: "side-effects", description: "none" }] }, async ({ page }) => {
+test("Admin user views Custom Fields page", { tag: ["@id:t_48088fcb", "@feature:custom-fields"], annotation: [{ type: "issue", description: "unlinked" }, { type: "side-effects", description: "none" }] }, async ({ page }) => {
   await page.goto("/users/sign_in");
   const usersSignInPage3 = new UsersSignInPage3(page);
   const tenantsPage = new TenantsPage(page);

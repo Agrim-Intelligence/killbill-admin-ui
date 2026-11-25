@@ -1,0 +1,34 @@
+{
+  "contract_version": "1.1.0",
+  "class": "AccountsPage3",
+  "route": "/accounts/{record}",
+  "elements": {
+    "breadcrumbNavigation": {
+      "intent": "The control labelled \"Breadcrumb\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "navigation[name=Breadcrumb]"
+        }
+      ]
+    },
+    "uSDText": {
+      "intent": "The control labelled \"USD\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByText",
+          "value": "USD"
+        }
+      ]
+    },
+    "breadcrumbAccountLink": {
+      "intent": "The control labelled \"Account\" on the page",
+      "candidates": [
+        {
+          "strategy": "locator",
+          "value": "role=navigation[name=\"Breadcrumb\"] >> role=link[name=\"Account\"]"
+        }
+      ]
+    }
+  }
+}

@@ -5,14 +5,21 @@ import { Page, Locator, expect, test } from '@playwright/test';
 export class AccountsPage {
   static readonly route = '/accounts';
 
-  /** The control labelled "What are you looking for?" on the page */
-  private readonly whatAreYouLookingForTextbox: Locator;
   /** The nameTable control on the page */
   private readonly nameTable: Locator;
+  /** The control labelled "What are you looking for?" on the page */
+  private readonly whatAreYouLookingForTextbox: Locator;
 
   constructor(private readonly page: Page) {
-    this.whatAreYouLookingForTextbox = page.getByRole('textbox', { name: 'What are you looking for?' });
     this.nameTable = page.locator('role=table >> internal:has="role=columnheader[name=\\"Name\\"i]" >> role=rowgroup >> internal:has-not="role=columnheader"');
+    this.whatAreYouLookingForTextbox = page.getByRole('textbox', { name: 'What are you looking for?' });
+  }
+
+  async accounts(userName: string): Promise<void> {
+    await test.step('accounts()', async () => {
+      await this.whatAreYouLookingForTextbox.fill(userName);
+      await this.whatAreYouLookingForTextbox.press('Enter');
+    }, { box: true });
   }
 
   async expectLoaded(): Promise<void> {

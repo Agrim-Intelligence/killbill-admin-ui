@@ -3,3 +3,5 @@ features:
     title: Accounts
   user-authentication:
     title: User Authentication
+  users-sign-in:
+    title: auth

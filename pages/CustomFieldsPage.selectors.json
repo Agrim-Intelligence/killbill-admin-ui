@@ -17,6 +17,10 @@
       "candidates": [
         {
           "strategy": "getByRole",
+          "value": "heading[name=Custom Field List]"
+        },
+        {
+          "strategy": "getByRole",
           "value": "heading[name=Custom Fields]"
         }
       ]

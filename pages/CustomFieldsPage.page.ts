@@ -12,7 +12,7 @@ export class CustomFieldsPage {
 
   constructor(private readonly page: Page) {
     this.breadcrumbNavigation = page.getByRole('navigation', { name: 'Breadcrumb' });
-    this.customFieldsHeading = page.getByRole('heading', { name: 'Custom Fields' });
+    this.customFieldsHeading = page.getByRole('heading', { name: 'Custom Field List' });
   }
 
   async expectLoaded(): Promise<void> {

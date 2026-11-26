@@ -8,6 +8,10 @@
       "candidates": [
         {
           "strategy": "getByRole",
+          "value": "button[name=Proceed]"
+        },
+        {
+          "strategy": "getByRole",
           "value": "button[name=Continue]"
         }
       ]

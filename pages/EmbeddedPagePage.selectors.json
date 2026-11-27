@@ -32,6 +32,10 @@
       "candidates": [
         {
           "strategy": "getByRole",
+          "value": "heading[name=Embedded view]"
+        },
+        {
+          "strategy": "getByRole",
           "value": "heading[name=Embedded page]"
         }
       ]

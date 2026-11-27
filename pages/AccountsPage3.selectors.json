@@ -3,21 +3,21 @@
   "class": "AccountsPage3",
   "route": "/accounts/{record}",
   "elements": {
-    "breadcrumbNavigation": {
-      "intent": "The control labelled \"Breadcrumb\" on the page",
-      "candidates": [
-        {
-          "strategy": "getByRole",
-          "value": "navigation[name=Breadcrumb]"
-        }
-      ]
-    },
     "uSDText": {
       "intent": "The control labelled \"USD\" on the page",
       "candidates": [
         {
           "strategy": "getByText",
           "value": "USD"
+        }
+      ]
+    },
+    "breadcrumbNavigation": {
+      "intent": "The control labelled \"Breadcrumb\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByRole",
+          "value": "navigation[name=Breadcrumb]"
         }
       ]
     },

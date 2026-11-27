@@ -5,16 +5,16 @@ import { Page, Locator, expect, test } from '@playwright/test';
 export class AccountsPage3 {
   static readonly route = '/accounts/{record}';
 
-  /** The control labelled "Breadcrumb" on the page */
-  private readonly breadcrumbNavigation: Locator;
   /** The control labelled "USD" on the page */
   private readonly uSDText: Locator;
+  /** The control labelled "Breadcrumb" on the page */
+  private readonly breadcrumbNavigation: Locator;
   /** The control labelled "Account" on the page */
   private readonly breadcrumbAccountLink: Locator;
 
   constructor(private readonly page: Page) {
-    this.breadcrumbNavigation = page.getByRole('navigation', { name: 'Breadcrumb' });
     this.uSDText = page.getByText('USD');
+    this.breadcrumbNavigation = page.getByRole('navigation', { name: 'Breadcrumb' });
     this.breadcrumbAccountLink = page.locator('role=navigation[name="Breadcrumb"] >> role=link[name="Account"]');
   }
 
@@ -23,12 +23,6 @@ export class AccountsPage3 {
       if (userName !== undefined) await expect(this.breadcrumbNavigation).toContainText(userName);
       await expect(this.uSDText).toBeVisible();
       if (userName !== undefined) await expect(this.breadcrumbNavigation).toContainText(userName);
-    }, { box: true });
-  }
-
-  async breadcrumbAccount(): Promise<void> {
-    await test.step('breadcrumbAccount()', async () => {
-      await this.breadcrumbAccountLink.click();
     }, { box: true });
   }
 
@@ -41,6 +35,18 @@ export class AccountsPage3 {
   async expectLoaded3(userName?: string): Promise<void> {
     await test.step('expectLoaded3()', async () => {
       if (userName !== undefined) await expect(this.breadcrumbNavigation).toContainText(userName);
+    }, { box: true });
+  }
+
+  async expectLoaded4(): Promise<void> {
+    await test.step('expectLoaded4()', async () => {
+      await expect(this.uSDText).toBeVisible();
+    }, { box: true });
+  }
+
+  async breadcrumbAccount(): Promise<void> {
+    await test.step('breadcrumbAccount()', async () => {
+      await this.breadcrumbAccountLink.click();
     }, { box: true });
   }
 }

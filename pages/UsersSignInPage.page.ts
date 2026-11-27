@@ -30,6 +30,12 @@ export class UsersSignInPage {
     this.createAccountButton = page.getByRole('button', { name: 'Create Account' });
   }
 
+  async accountsViewAll(): Promise<void> {
+    await test.step('accountsViewAll()', async () => {
+      await this.accountsViewAllLink.click();
+    }, { box: true });
+  }
+
   async tagsApplyOneOrMoreTags(): Promise<void> {
     await test.step('tagsApplyOneOrMoreTags()', async () => {
       await this.tagsApplyOneOrMoreTagsLink.click();
@@ -51,12 +57,6 @@ export class UsersSignInPage {
   async embeddedPage(): Promise<void> {
     await test.step('embeddedPage()', async () => {
       await this.embeddedPageLink.click();
-    }, { box: true });
-  }
-
-  async accountsViewAll(): Promise<void> {
-    await test.step('accountsViewAll()', async () => {
-      await this.accountsViewAllLink.click();
     }, { box: true });
   }
 

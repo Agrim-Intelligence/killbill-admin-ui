@@ -63,6 +63,18 @@ clients:
       plugin-management: true
     accounts:
     - admin
+    sign_in:
+      account: admin
+      username: admin
+      login:
+        method: POST
+        path: /users/sign_in
+        body:
+          username: '{username}'
+          password: '{password}'
+      landing:
+        path: /
+        json_key: status
     effects_allowed:
     - email
     - text

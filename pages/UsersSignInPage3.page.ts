@@ -18,6 +18,14 @@ export class UsersSignInPage3 {
     this.usernameTextbox = page.getByRole('textbox', { name: 'Username' });
   }
 
+  async usersSignInPage3(username: string, adminPassword: string): Promise<void> {
+    await test.step('usersSignInPage3()', async () => {
+      await this.usernameTextbox.fill(username);
+      await this.passwordTextbox.fill(adminPassword);
+      await this.signInButton.click();
+    }, { box: true });
+  }
+
   async signIn(username: string, password: string): Promise<void> {
     await test.step('signIn()', async () => {
       await this.usernameTextbox.fill(username);

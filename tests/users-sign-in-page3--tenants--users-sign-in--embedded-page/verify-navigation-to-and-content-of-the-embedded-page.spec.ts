@@ -5,7 +5,7 @@ import { UsersSignInPage } from "../../pages/UsersSignInPage.page";
 import { EmbeddedPagePage } from "../../pages/EmbeddedPagePage.page";
 import { usersSignInPage3TenantsUsersSignInEmbeddedPageData } from "../../data/users-sign-in-page3--tenants--users-sign-in--embedded-page/verify-navigation-to-and-content-of-the-embedded-page.data";
 
-test("Verify navigation to and content of the embedded page", { tag: ["@id:t_4e696d3e", "@feature:embedded-page"], annotation: [{ type: "issue", description: "unlinked" }, { type: "side-effects", description: "none" }] }, async ({ page }) => {
+test("Verify navigation to and content of the embedded page", { tag: ["@id:t_4e696d3e", "@feature:plugin-pages"], annotation: [{ type: "issue", description: "unlinked" }, { type: "side-effects", description: "none" }] }, async ({ page }) => {
   await page.goto("/");
   const usersSignInPage3 = new UsersSignInPage3(page);
   const tenantsPage = new TenantsPage(page);

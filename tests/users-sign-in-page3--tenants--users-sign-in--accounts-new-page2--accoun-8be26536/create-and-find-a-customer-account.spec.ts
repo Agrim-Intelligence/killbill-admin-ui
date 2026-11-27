@@ -7,7 +7,7 @@ import { AccountsPage3 } from "../../pages/AccountsPage3.page";
 import { AccountsPage } from "../../pages/AccountsPage.page";
 import { usersSignInPage3TenantsUsersSignInAccountsNewPage2Accoun8be26536Data } from "../../data/users-sign-in-page3--tenants--users-sign-in--accounts-new-page2--accoun-8be26536/create-and-find-a-customer-account.data";
 
-test("Create and find a customer account", { tag: ["@id:t_ffb1fb27", "@feature:accounts"], annotation: [{ type: "issue", description: "unlinked" }, { type: "side-effects", description: "none" }] }, async ({ page }) => {
+test("Create and find a customer account", { tag: ["@id:t_ffb1fb27", "@feature:customer-accounts"], annotation: [{ type: "issue", description: "unlinked" }, { type: "side-effects", description: "none" }] }, async ({ page }) => {
   await page.goto("/");
   const usersSignInPage3 = new UsersSignInPage3(page);
   const tenantsPage = new TenantsPage(page);

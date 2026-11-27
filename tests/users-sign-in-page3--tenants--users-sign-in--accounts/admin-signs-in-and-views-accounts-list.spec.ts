@@ -5,7 +5,7 @@ import { UsersSignInPage } from "../../pages/UsersSignInPage.page";
 import { AccountsPage } from "../../pages/AccountsPage.page";
 import { usersSignInPage3TenantsUsersSignInAccountsData } from "../../data/users-sign-in-page3--tenants--users-sign-in--accounts/admin-signs-in-and-views-accounts-list.data";
 
-test("Admin signs in and views accounts list", { tag: ["@id:t_c1ac61b2", "@feature:accounts"], annotation: [{ type: "issue", description: "unlinked" }, { type: "side-effects", description: "none" }] }, async ({ page }) => {
+test("Admin signs in and views accounts list", { tag: ["@id:t_c1ac61b2", "@feature:customer-accounts"], annotation: [{ type: "issue", description: "unlinked" }, { type: "side-effects", description: "none" }] }, async ({ page }) => {
   await page.goto("/users/sign_in");
   const usersSignInPage3 = new UsersSignInPage3(page);
   const tenantsPage = new TenantsPage(page);

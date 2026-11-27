@@ -19,6 +19,15 @@
           "value": "button[name=Continue]"
         }
       ]
+    },
+    "tenantText": {
+      "intent": "The control labelled \"Tenant\" on the page",
+      "candidates": [
+        {
+          "strategy": "getByText",
+          "value": "Tenant"
+        }
+      ]
     }
   }
 }

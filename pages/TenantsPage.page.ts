@@ -7,9 +7,12 @@ export class TenantsPage {
 
   /** The submit button on the sign-in form */
   private readonly continueButton: Locator;
+  /** The control labelled "Tenant" on the page */
+  private readonly tenantText: Locator;
 
   constructor(private readonly page: Page) {
     this.continueButton = page.getByRole('button', { name: 'Use this tenant' });
+    this.tenantText = page.getByText('Tenant');
   }
 
   async continue(): Promise<void> {

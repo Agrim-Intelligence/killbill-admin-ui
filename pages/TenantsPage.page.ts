@@ -9,7 +9,7 @@ export class TenantsPage {
   private readonly continueButton: Locator;
 
   constructor(private readonly page: Page) {
-    this.continueButton = page.getByRole('button', { name: 'Proceed' });
+    this.continueButton = page.getByRole('button', { name: 'Use this tenant' });
   }
 
   async continue(): Promise<void> {

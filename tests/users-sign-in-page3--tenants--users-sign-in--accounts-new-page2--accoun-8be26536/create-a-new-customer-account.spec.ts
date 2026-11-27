@@ -18,7 +18,7 @@ test("Create a new customer account", { tag: ["@id:t_a0608007", "@feature:core",
   const accountsPage = new AccountsPage(page);
   await usersSignInPage3.signIn(usersSignInPage3TenantsUsersSignInAccountsNewPage2Accoun8be26536Data.createANewCustomerAccount.username, usersSignInPage3TenantsUsersSignInAccountsNewPage2Accoun8be26536Data.createANewCustomerAccount.password);
   await tenantsPage.continue();
-  await usersSignInPage.accountsViewAll();
+  await usersSignInPage.createAccount();
   await accountsNewPage2.saveAccount(usersSignInPage3TenantsUsersSignInAccountsNewPage2Accoun8be26536Data.createANewCustomerAccount.userName, usersSignInPage3TenantsUsersSignInAccountsNewPage2Accoun8be26536Data.createANewCustomerAccount.email);
   // Then 1
   await expect(page).toHaveURL(/\/accounts\//);

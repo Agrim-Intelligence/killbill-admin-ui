@@ -31,6 +31,38 @@ clients:
           kind: journey
           journey: create-a-new-customer-account
           key: account_id
+    features:
+      tagging: true
+      tags: true
+      tenant-setup: true
+      subscription-management: true
+      '1': true
+      invoices: true
+      kpm: true
+      users-sign-in: true
+      custom-field-records: true
+      plugin-pages: true
+      admin-allowed-users: true
+      admin-access: true
+      admin-tenants: true
+      queue-monitoring: true
+      sign-in: true
+      subscriptions: true
+      payment-methods: true
+      queues: true
+      payments: true
+      payment-method-management: true
+      user-authentication: true
+      custom-fields: true
+      payment-collection: true
+      accounts: true
+      tag-definitions: true
+      invoicing: true
+      customer-accounts: true
+      embedded-page: true
+      plugin-management: true
+    accounts:
+    - admin
   - id: default_uat
     deployment: uat
     accounts:

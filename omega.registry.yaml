@@ -63,6 +63,16 @@ clients:
       plugin-management: true
     accounts:
     - admin
+    effects_allowed:
+    - email
+    - text
+    - payment
+    - partner
+    outbound_safe:
+      email: disabled
+      payment: test-mode
+      text: disabled
+      partner: disabled
   - id: default_uat
     deployment: uat
     accounts:

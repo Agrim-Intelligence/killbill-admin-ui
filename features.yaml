@@ -1,8 +1,10 @@
 features:
   accounts:
     title: Accounts
+    retired_in: '0'
   user-authentication:
     title: User Authentication
+    retired_in: '0'
   users-sign-in:
     title: auth
     retired_in: '0'
@@ -11,28 +13,40 @@ features:
     retired_in: '0'
   payments:
     title: Payments
+    retired_in: '0'
   tag-definitions:
     title: Tag Definitions
+    retired_in: '0'
   payment-methods:
     title: Payment Methods
+    retired_in: '0'
   queues:
     title: Queues
+    retired_in: '0'
   kpm:
     title: Kpm
+    retired_in: '0'
   admin-allowed-users:
     title: Admin Allowed Users
+    retired_in: '0'
   invoices:
     title: Invoices
+    retired_in: '0'
   embedded-page:
     title: Embedded Page
+    retired_in: '0'
   custom-fields:
     title: Custom Fields
+    retired_in: '0'
   admin-tenants:
     title: Admin Tenants
+    retired_in: '0'
   tags:
     title: Tags
+    retired_in: '0'
   subscriptions:
     title: Subscriptions
+    retired_in: '0'
   sign-in:
     title: Sign in to the admin UI
   customer-accounts:

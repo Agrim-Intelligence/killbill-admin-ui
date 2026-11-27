@@ -25,6 +25,12 @@ clients:
   links:
   - id: default_qa
     deployment: qa
+    records:
+      needs:
+        account:
+          kind: journey
+          journey: create-a-new-customer-account
+          key: account_id
   - id: default_uat
     deployment: uat
     accounts:

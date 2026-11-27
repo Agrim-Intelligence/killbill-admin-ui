@@ -1,3 +1,6 @@
 {
-  "account_id": "set-by-hand-off"
+  "account_id": "set-by-hand-off",
+  "admin-user-signs-in.adminSignsInPicksTenantAndNavigatesToInvoices.adminPassword": {
+    "credential": "default"
+  }
 }

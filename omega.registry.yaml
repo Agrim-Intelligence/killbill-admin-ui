@@ -32,35 +32,35 @@ clients:
           journey: create-a-new-customer-account
           key: account_id
     features:
+      '1': false
+      accounts: true
+      admin-access: true
+      admin-allowed-users: true
+      admin-tenants: true
+      custom-field-records: true
+      custom-fields: true
+      customer-accounts: true
+      embedded-page: true
+      invoices: true
+      invoicing: true
+      kpm: true
+      payment-collection: true
+      payment-method-management: true
+      payment-methods: true
+      payments: true
+      plugin-management: true
+      plugin-pages: true
+      queue-monitoring: true
+      queues: true
+      sign-in: true
+      subscription-management: true
+      subscriptions: true
+      tag-definitions: true
       tagging: true
       tags: true
       tenant-setup: true
-      subscription-management: true
-      '1': true
-      invoices: true
-      kpm: true
-      users-sign-in: true
-      custom-field-records: true
-      plugin-pages: true
-      admin-allowed-users: true
-      admin-access: true
-      admin-tenants: true
-      queue-monitoring: true
-      sign-in: true
-      subscriptions: true
-      payment-methods: true
-      queues: true
-      payments: true
-      payment-method-management: true
       user-authentication: true
-      custom-fields: true
-      payment-collection: true
-      accounts: true
-      tag-definitions: true
-      invoicing: true
-      customer-accounts: true
-      embedded-page: true
-      plugin-management: true
+      users-sign-in: true
     accounts:
     - admin
     sign_in:

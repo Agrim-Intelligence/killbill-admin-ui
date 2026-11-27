@@ -7,8 +7,16 @@ vendor:
     product_branch_rule: master
 lines:
 - id: default
-  status: active
+  status: retired
   branch: master
+- id: v4.0
+  status: maintenance
+  branch: qa
+  match: 4\.0\.\d+
+- id: v4.1
+  status: active
+  branch: qa
+  match: 4\.1\.\d+
 deployments:
 - id: qa
   kind: pre-production
@@ -89,10 +97,126 @@ clients:
     deployment: uat
     accounts:
     - admin
+    features:
+      '1': false
+      accounts: true
+      admin-access: true
+      admin-allowed-users: true
+      admin-tenants: true
+      custom-field-records: true
+      custom-fields: true
+      customer-accounts: true
+      embedded-page: true
+      invoices: true
+      invoicing: true
+      kpm: true
+      payment-collection: true
+      payment-method-management: true
+      payment-methods: true
+      payments: true
+      plugin-management: true
+      plugin-pages: true
+      queue-monitoring: true
+      queues: true
+      sign-in: true
+      subscription-management: true
+      subscriptions: true
+      tag-definitions: true
+      tagging: true
+      tags: true
+      tenant-setup: true
+      user-authentication: true
+      users-sign-in: true
+    sign_in:
+      account: admin
+      username: admin
+      login:
+        method: POST
+        path: /users/sign_in
+        body:
+          username: '{username}'
+          password: '{password}'
+      landing:
+        path: /
+        json_key: status
+    effects_allowed:
+    - email
+    - text
+    - payment
+    - partner
+    outbound_safe:
+      email: disabled
+      payment: test-mode
+      text: disabled
+      partner: disabled
+    records:
+      needs:
+        account:
+          kind: journey
+          journey: create-a-new-customer-account
+          key: account_id
   - id: default_staging
     deployment: staging
     accounts:
     - admin
+    features:
+      '1': false
+      accounts: true
+      admin-access: true
+      admin-allowed-users: true
+      admin-tenants: true
+      custom-field-records: true
+      custom-fields: true
+      customer-accounts: true
+      embedded-page: true
+      invoices: true
+      invoicing: true
+      kpm: true
+      payment-collection: true
+      payment-method-management: true
+      payment-methods: true
+      payments: true
+      plugin-management: true
+      plugin-pages: true
+      queue-monitoring: true
+      queues: true
+      sign-in: true
+      subscription-management: true
+      subscriptions: true
+      tag-definitions: true
+      tagging: true
+      tags: true
+      tenant-setup: true
+      user-authentication: true
+      users-sign-in: true
+    sign_in:
+      account: admin
+      username: admin
+      login:
+        method: POST
+        path: /users/sign_in
+        body:
+          username: '{username}'
+          password: '{password}'
+      landing:
+        path: /
+        json_key: status
+    effects_allowed:
+    - email
+    - text
+    - payment
+    - partner
+    outbound_safe:
+      email: disabled
+      payment: test-mode
+      text: disabled
+      partner: disabled
+    records:
+      needs:
+        account:
+          kind: journey
+          journey: create-a-new-customer-account
+          key: account_id
 - id: client-a
   name: Client A
   links:
@@ -100,6 +224,64 @@ clients:
     deployment: qa
     accounts:
     - admin
+    features:
+      '1': false
+      accounts: true
+      admin-access: true
+      admin-allowed-users: true
+      admin-tenants: true
+      custom-field-records: true
+      custom-fields: true
+      customer-accounts: true
+      embedded-page: true
+      invoices: true
+      invoicing: true
+      kpm: true
+      payment-collection: true
+      payment-method-management: true
+      payment-methods: true
+      payments: true
+      plugin-management: true
+      plugin-pages: true
+      queue-monitoring: true
+      queues: true
+      sign-in: true
+      subscription-management: true
+      subscriptions: true
+      tag-definitions: true
+      tagging: false
+      tags: true
+      tenant-setup: true
+      user-authentication: true
+      users-sign-in: true
+    sign_in:
+      account: admin
+      username: admin
+      login:
+        method: POST
+        path: /users/sign_in
+        body:
+          username: '{username}'
+          password: '{password}'
+      landing:
+        path: /
+        json_key: status
+    effects_allowed:
+    - email
+    - text
+    - payment
+    - partner
+    outbound_safe:
+      email: disabled
+      payment: test-mode
+      text: disabled
+      partner: disabled
+    records:
+      needs:
+        account:
+          kind: journey
+          journey: create-a-new-customer-account
+          key: account_id
 - id: client-b
   name: Client B
   links:
@@ -107,3 +289,61 @@ clients:
     deployment: uat
     accounts:
     - admin
+    features:
+      '1': false
+      accounts: true
+      admin-access: true
+      admin-allowed-users: true
+      admin-tenants: true
+      custom-field-records: true
+      custom-fields: true
+      customer-accounts: true
+      embedded-page: true
+      invoices: true
+      invoicing: false
+      kpm: true
+      payment-collection: true
+      payment-method-management: true
+      payment-methods: true
+      payments: true
+      plugin-management: true
+      plugin-pages: true
+      queue-monitoring: true
+      queues: true
+      sign-in: true
+      subscription-management: true
+      subscriptions: true
+      tag-definitions: true
+      tagging: true
+      tags: true
+      tenant-setup: true
+      user-authentication: true
+      users-sign-in: true
+    sign_in:
+      account: admin
+      username: admin
+      login:
+        method: POST
+        path: /users/sign_in
+        body:
+          username: '{username}'
+          password: '{password}'
+      landing:
+        path: /
+        json_key: status
+    effects_allowed:
+    - email
+    - text
+    - payment
+    - partner
+    outbound_safe:
+      email: disabled
+      payment: test-mode
+      text: disabled
+      partner: disabled
+    records:
+      needs:
+        account:
+          kind: journey
+          journey: create-a-new-customer-account
+          key: account_id

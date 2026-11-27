@@ -40,7 +40,7 @@ clients:
           journey: create-a-new-customer-account
           key: account_id
     features:
-      '1': false
+      '1': true
       accounts: true
       admin-access: true
       admin-allowed-users: true

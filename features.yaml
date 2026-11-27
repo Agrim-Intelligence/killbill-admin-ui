@@ -5,8 +5,10 @@ features:
     title: User Authentication
   users-sign-in:
     title: auth
+    retired_in: '0'
   '1':
     title: embedded
+    retired_in: '0'
   payments:
     title: Payments
   tag-definitions:

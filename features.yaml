@@ -33,3 +33,29 @@ features:
     title: Tags
   subscriptions:
     title: Subscriptions
+  sign-in:
+    title: Sign in to the admin UI
+  customer-accounts:
+    title: Create and find customer accounts
+  admin-access:
+    title: Control who can use the admin UI
+  custom-field-records:
+    title: Add custom fields to records
+  plugin-pages:
+    title: Open plugin pages inside the admin UI
+  tagging:
+    title: Tag records and manage tag definitions
+  tenant-setup:
+    title: Set up and switch tenants
+  invoicing:
+    title: Review and adjust invoices
+  payment-collection:
+    title: Record payments and refunds
+  payment-method-management:
+    title: Manage customer payment methods
+  subscription-management:
+    title: Create and change subscriptions
+  plugin-management:
+    title: Install and manage plugins
+  queue-monitoring:
+    title: Monitor background queues

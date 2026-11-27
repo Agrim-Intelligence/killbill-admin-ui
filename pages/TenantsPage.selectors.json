@@ -8,6 +8,10 @@
       "candidates": [
         {
           "strategy": "getByRole",
+          "value": "button[name=Use this tenant]"
+        },
+        {
+          "strategy": "getByRole",
           "value": "button[name=Proceed]"
         },
         {

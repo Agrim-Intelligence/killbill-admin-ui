@@ -27,6 +27,12 @@ export class TagsPage {
     }, { box: true });
   }
 
+  async expectLoaded3(): Promise<void> {
+    await test.step('expectLoaded3()', async () => {
+      await expect(this.tagsHeading).toBeVisible();
+    }, { box: true });
+  }
+
   async tagDefinitions(): Promise<void> {
     await test.step('tagDefinitions()', async () => {
       await this.tagDefinitionsLink.click();

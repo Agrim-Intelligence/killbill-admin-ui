@@ -17,7 +17,7 @@ export class EmbeddedPagePage {
   constructor(private readonly page: Page) {
     this.learnMoreLink = page.locator('iframe[name="embed-frame"]').contentFrame().getByRole('link', { name: 'Learn more' });
     this.embeddedPageLink = page.getByRole('link', { name: 'Embedded page' });
-    this.embeddedPageHeading = page.getByRole('heading', { name: 'Embedded page' });
+    this.embeddedPageHeading = page.getByRole('heading', { name: 'Embedded view' });
     this.thisDomainIsForUseInText = page.locator('iframe[name="embed-frame"]').contentFrame().getByText('This domain is for use in');
   }
 

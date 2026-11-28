@@ -1,1 +1,10 @@
-{}
+{
+  "admin-manages-tags.adminNavigatesToTheTagsPageAndVerifiesItsHeading.username": "admin",
+  "users-sign-in-page3--tenants--admin-allowed-users.adminSeesTheirUserInTheAllowedUsersList.username": "admin",
+  "users-sign-in-page3--tenants--users-sign-in--accounts-new-page2--accoun-8be26536.createANewCustomerAccount.username": "admin",
+  "users-sign-in-page3--tenants--users-sign-in--accounts-new-page2--accoun-8be26536.createAndFindACustomerAccount.username": "admin",
+  "users-sign-in-page3--tenants--users-sign-in--accounts.adminSignsInAndViewsAccountsList.username": "admin",
+  "users-sign-in-page3--tenants--users-sign-in--custom-fields.adminUserViewsCustomFieldsPage.username": "admin",
+  "users-sign-in-page3--tenants--users-sign-in--embedded-page.verifyNavigationToAndContentOfTheEmbeddedPage.username": "admin",
+  "users-sign-in-page3--tenants--users-sign-in--tags--tag-definitions--tag-7940549b.createANewTagDefinition.username": "admin"
+}

@@ -104,7 +104,7 @@ clients:
       payments: true
       plugin-management: true
       plugin-pages: true
-      queue-monitoring: true
+      queue-monitoring: false
       queues: true
       sign-in: true
       subscription-management: true

@@ -71,18 +71,6 @@ clients:
       users-sign-in: true
     accounts:
     - admin
-    sign_in:
-      account: admin
-      username: admin
-      login:
-        method: POST
-        path: /users/sign_in
-        body:
-          username: '{username}'
-          password: '{password}'
-      landing:
-        path: /
-        json_key: status
     effects_allowed:
     - email
     - text
@@ -127,18 +115,6 @@ clients:
       tenant-setup: true
       user-authentication: true
       users-sign-in: true
-    sign_in:
-      account: admin
-      username: admin
-      login:
-        method: POST
-        path: /users/sign_in
-        body:
-          username: '{username}'
-          password: '{password}'
-      landing:
-        path: /
-        json_key: status
     effects_allowed:
     - email
     - text
@@ -189,18 +165,6 @@ clients:
       tenant-setup: true
       user-authentication: true
       users-sign-in: true
-    sign_in:
-      account: admin
-      username: admin
-      login:
-        method: POST
-        path: /users/sign_in
-        body:
-          username: '{username}'
-          password: '{password}'
-      landing:
-        path: /
-        json_key: status
     effects_allowed:
     - email
     - text
@@ -254,18 +218,6 @@ clients:
       tenant-setup: true
       user-authentication: true
       users-sign-in: true
-    sign_in:
-      account: admin
-      username: admin
-      login:
-        method: POST
-        path: /users/sign_in
-        body:
-          username: '{username}'
-          password: '{password}'
-      landing:
-        path: /
-        json_key: status
     effects_allowed:
     - email
     - text
@@ -319,18 +271,6 @@ clients:
       tenant-setup: true
       user-authentication: true
       users-sign-in: true
-    sign_in:
-      account: admin
-      username: admin
-      login:
-        method: POST
-        path: /users/sign_in
-        body:
-          username: '{username}'
-          password: '{password}'
-      landing:
-        path: /
-        json_key: status
     effects_allowed:
     - email
     - text
